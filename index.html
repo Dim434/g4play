@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body,
+        html {
+            margin: 0;
+        }
+        
+        body {
+            font-size: 2rem;
+        }
+        
+        ul {
+            text-align: center;
+        }
+        
+        li {
+            display: inline-block;
+            margin: 10px;
+        }
+        
+        a {
+            padding: 20px;
+            border: 1px solid black;
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        nav{
+            position: fixed;
+            top:0;
+            width:200px;
+            height: 100vh;
+            left:-200px;
+        }
+        .vis{
+            left:0;
+        }
+        button{
+            position: absolute;
+            top:10;
+            right:-100px;
+        }
+        @media (min-width: 520px) {
+            body {
+                font-size: 1.3rem;
+            }
+            article {
+                display: inline-block;
+                vertical-align: top;
+                width: 250px;
+                margin: 10px;
+            }
+            main {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Милый сайтик</h1>
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="#1">123</a>
+                </li>
+                <li>
+                    <a href="#2">123</a>
+                </li>
+                <li>
+                    <a href="#3">123</a>
+                
+                </li>
+            </ul>
+            <button id="hide">Открыть</button>
+        </nav>
+    </header>
+    <main>"
+
+
+        <article>
+            <header>
+                <h2></h2>
+            </header>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur obcaecati laboriosam, sint, dolorem odit repellat. Nulla cum dignissimos impedit assumenda, fugiat nisi. Tempora voluptate et deleniti cupiditate temporibus unde. Beatae.
+        </article>
+
+        <article>
+            <header>
+                <h2></h2>
+            </header>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, perspiciatis magni totam in animi est aspernatur facere placeat alias, repudiandae illo laudantium eos ratione minima, nihil, labore maiores quae eum.
+        </article>
+
+        <article>
+            <header>
+                <h2></h2>
+            </header>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eligendi voluptatibus, voluptatem ab, perspiciatis architecto harum reiciendis esse recusandae fuga numquam, sunt beatae. Nisi atque id impedit rem, nulla incidunt.
+        </article>
+
+    </main>
+<script>
+    hide.addEventListener('click', function(){
+        menu.classList.toggle('vis');
+                          
+                          })
+
+    
+    </script>
+</body>
+
+</html>
