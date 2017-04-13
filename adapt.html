@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Адаптивность - 1</title>
+    <style>
+        .adapt{
+            width: 100%;
+            height:300px;
+            background-color: blue;
+            transition:1.5s;
+        }
+        @media(min-width:1024px){
+            .adapt{
+                width:300px;
+                background-color: green;
+            }    
+            
+        }
+        @media(min-width:1366px){
+            .adapt{
+               width:250px;
+                background-color: red;
+            }
+        }
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div class="adapt"></div>
+    <div class="adapt"></div>
+    <div class="adapt"></div>
+    <div class="adapt"></div>
+</body>
+</html>
