@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Адаптивность - 1</title>
+    <style>
+       
+        body {
+            background-color: gray;
+            transition: 0.5s;
+            margin: 0;
+            position: relative;
+        }
+        html{
+            margin:0;
+        }
+        .adapt {
+            width: 300px;
+            height: 300px;
+            border: orange 2px solid;
+            border-radius: 50%;
+            background-color: yellow;
+           left: calc( 50% - 150px );
+            top: 999px;
+            transition: 2s;
+            position: absolute;    
+        }
+        
+        @media (min-width:600px) {
+            body {
+                background-color: purple;
+            }
+            .adapt {
+               top: 500px;
+            }
+        }
+        
+        @media(min-width:800px) {
+            body {
+                background-color: pink;
+            }
+            .adapt {
+               top: 150px;
+            }
+        }
+        
+        @media(min-width:1000px) {
+            body {
+                background-color: aqua;
+            }
+            .adapt {
+               top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="adapt"></div>
+</body>
+</html>
