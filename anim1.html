@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        @keyframes cpos {
+            0% {
+                transform: rotate(0) translate(0, 0) ;
+                background: #102bf7;
+            }
+            25% {
+                transform: rotate(30deg) translate(400px, 0) ;
+                background: #00ff45;
+            }
+            50% {
+                transform: rotate(45deg) translate(400px, 400px) ;
+                background: #ff0000;
+            }
+            75% {
+                transform: rotate(50deg) translate(0, 400px) ;
+                background: #9300ff;
+            }
+            100% {
+                transform:rotate(90deg)translate(0, 0);
+                background: #000;
+            }
+        }
+        
+        .b {
+            position:absolute;
+            width: 100px;
+            height: 100px;
+            background: #000;
+            left:48%;
+            border-radius: 50%;
+            position: absolute;
+        }
+        
+        .anim1 {
+            animation: cpos 10s infinite  ease-in-out;
+            background: #000;
+        }
+        
+        .anim2 {
+            animation: cpos 10s infinite  ease-in-out -2s;
+            background: #102bf7;
+        }
+        
+        .anim3 {
+            animation: cpos 10s infinite  ease-in-out -4s ;
+            background: #00ff45;
+        }
+        
+        .anim4 {
+            animation: cpos 10s infinite  ease-in-out -6s ;
+            background: #ff0000;
+        }
+        
+        .anim5 {
+            animation: cpos 10s infinite  ease-in-out -8s ;
+            background: #9300ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="b anim1"></div>
+    <div class="b anim2"></div>
+    <div class="b anim3"></div>
+    <div class="b anim4"></div>
+    <div class="b anim5"></div>
+
+</body>
+</html>

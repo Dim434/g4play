@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        @keyframes krug{
+            from,to,50%{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                
+            }
+            12.5%,87.5%{
+             width: 200px;
+                height: 200px;;
+                background-color: blue;
+            }
+            25%,75%{
+             width: 100px;
+                height: 100px;
+                background-color: green;
+            }
+            37.5%,62.5%{
+                width: 200px;
+                height: 200px;
+                background-color: orange;
+            }
+            
+            
+        }
+        @keyframes photo{
+            0%,100%{
+                background: url(http://katyaburg.ru/sites/default/files/pictures/krasota_prirody/gorniy_peyzag_skaly_snegnye_piki_foto_01.jpg) 100%/cover;
+            }
+            25%{
+                background: url(http://fonday.ru/images/tmp/12/6/original/12667YinokqvgJmxOPBSCjDdNhyZ.jpg) 100%/cover;
+            }
+            50%{
+                background: url(http://www.art-vernissage.ru/media/picture/28/osenvstaromparke.jpg) 100%/cover;
+                    
+                
+            }
+            75%{
+                background: url(http://www.topkurortov.com/wp-content/uploads/2014/06/nacionalnyj-park-banf.jpg) 100%/cover;
+            }
+            
+        }
+        .cla1{
+            display: inline-block;
+             background-color: green;
+           
+            border-radius: 50%;
+          animation: krug 4s ease-in-out infinite;
+           
+        }
+        .photo1{
+            position: absolute;
+            top:400px;
+            border:2s solid;
+            width: 600px;
+            height: 400px;
+            animation: photo 10s ease-in-out infinite;
+            
+        }
+        @keyframes krug1{
+            0%,100%{
+                
+                border-radius:50%;
+            }
+            25%{
+                transform:translate(400px,0);
+                border-radius:0%;
+            }
+            50%{
+                border-radius:50%;
+                 transform:translate(400px,-400px);
+                
+            }
+            75%{
+               border-radius:0%; transform:translate(0px,-400px);
+            }
+            
+            
+        }
+        .kr1{
+          animation: krug1 5s ease-in-out -5s infinite reverse; 
+            position: absolute;
+            top:1400px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .kr2{
+            animation: krug1 5s ease-in-out -1.25s infinite reverse;
+            position: absolute;
+            top:1400px;
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+         .kr3{
+            animation: krug1 5s ease-in-out -2.5s infinite reverse;
+            position: absolute;
+            top:1400px;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+        .kr4{
+            animation: krug1 5s ease-in-out -3.75s infinite reverse;
+            position: absolute;
+            top:1400px;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+        .svet{
+            height: 700px;
+            width: 300px;
+            background-color: gray;
+            border: 5px gray solid;
+            position: absolute;
+            top:1800px;
+            border-radius:50px;
+        }
+        .krg{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-top:50px;
+            margin-left:50px;
+            
+        }
+        @keyframes red1{
+            0%,100%{
+            background-color: rgba(255, 0, 0, 0.48);    
+            }
+            10%{
+                background-color: red;
+                
+            }
+            50%,70%,90%{
+                background-color: red;
+            }
+            60%,80%{
+                background-color: rgba(255, 0, 0, 0.48);
+            }
+        }
+        @keyframes yellow1{
+            0%{
+                    background-color: rgba(255, 255, 0, 0.48); 
+            }
+            1%{background-color: yellow;}
+            99%{background-color: yellow;}
+            100%{background-color: rgba(255, 255, 0, 0.48);}
+        }
+                @keyframes green1{
+            0%,100%{
+           background-color: rgba(0, 128, 0, 0.47);  
+            }
+            10%{
+                background-color: #00c600;
+                
+            }
+            50%,70%,90%{
+                background-color: #00c600;
+            }
+            60%,80%{
+                background-color: rgba(0, 128, 0, 0.47);
+            }
+        }
+        .r{
+            margin-top:0px;
+            background-color: rgba(255, 0, 0, 0.48);
+            
+        }
+        .svet:hover > .r{
+            animation:red1 5s ease-in-out 1;
+        }
+        .svet:hover > .y{
+            animation:yellow1 1.5s ease-in-out 5s 1;
+        }
+        .svet:hover > .g{
+            animation:green1 5s ease-in-out 6.5s 1;
+        }
+        .y{
+            background-color: rgba(255, 255, 0, 0.48);
+        }
+        .g{
+            background-color: rgba(0, 128, 0, 0.47);
+        }
+    </style>
+</head>
+<body>
+    <div class="cla1"></div>
+    <div class="photo1"></div>
+    <div class="kr1"></div>
+    <div class="kr2"></div>
+    <div class="kr3"></div>
+    <div class="kr4"></div>
+    <div class="svet">
+        
+        <div class="krg r"></div>
+        <div class="krg y"></div>
+        <div class="krg g"></div>
+        
+        
+        
+        
+    </div>
+    </body>
+</html>
