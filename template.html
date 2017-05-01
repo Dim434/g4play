@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <title>Template</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Roboto');
+        @import url('https://fonts.googleapis.com/css?family=Raleway:100,400');
+        
+        body {
+            font-family: "Roboto";
+        }
+        
+        body,
+        html {
+            margin: 0;
+        }
+        
+        header.menu {
+            position: fixed;
+            width: 100%;
+            height: 10%;
+            -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 95%, 0 100%);
+            clip-path: polygon(0 0%, 100% 0%, 100% 95%, 0 100%);
+            background-color: hsla(0, 0%, 0%, 0.63);
+            z-index: 1;
+        }
+        
+        header>p {
+            margin-left: 20%;
+            font-size: 2.3rem;
+            font-family: "Raleway";
+            margin-top: 20px;
+            display: inline-block;
+            color: white;
+        }
+        
+        nav {
+            margin-left: 50%;
+            display: inline-block;
+            color: white;
+        }
+        
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        ul {
+            display: inline-block;
+        }
+        
+        a {
+            color: green;
+            font-size: 1.4rem;
+        }
+        
+        @keyframes cpos {
+            0%,
+            100% {
+                background: url(./sova.jpg) 100%/cover;
+            }
+            25% {
+                background: url(http://file.mobilmusic.ru/04/0a/53/1067266.jpg) 100%/cover;
+            }
+            50% {
+                background: url(https://images3.alphacoders.com/206/thumb-1920-206137.jpg) 100%/cover;
+            }
+            75% {
+                background: url(http://www.sovoblog.ru/wp-content/uploads/2013/sovoblog.ru-139601249243326196-2013-10-22.jpg) 100%/cover;
+            }
+        }
+        
+        .photo {
+            width: 100%;
+            height: 100%;
+            animation: cpos 10s ease-in-out 2s infinite;
+            background: url(./sova.jpg) 100%/cover;
+            color: white;
+            margin: auto;
+            border-radius: 20px;
+            z-index: 3;
+            -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 95%, 0 100%);
+            clip-path: polygon(0 5%, 120% 0%, 100% 95%, 0 100%);
+            border-bottom: 10px/50%;
+        }
+        
+        .photo>p {
+            margin-top: 40vh;
+            margin-left: 40vw;
+            display: inline-block;
+            font-size: 5rem;
+        }
+        
+        .photo>p::after {
+            content: "";
+            display: block;
+            margin: auto;
+            height: 4px;
+            background-color: #fafafa;
+            width: 60%;
+            transition: all 1s;
+        }
+        
+        .photo>p:hover::after {
+            width: 100%;
+        }
+        
+        section {
+            -webkit-clip-path: polygon(0 10%, 120% 0%, 100% 95%, 0 100%);
+            clip-path: polygon(0 5%, 120% 0%, 100% 95%, 0 100%);
+            height: 90vh;
+        }
+        
+        .osnovnoj_text {
+            height: 50vh;
+        }
+        
+        .osnovnoj_text>article {
+            display: inline-block;
+            height: 10%;
+            width: 20%;
+            margin: 1.5%;
+            margin-top: 100px;
+            margin-left: 5%;
+            font-size: 1.6rem;
+            vertical-align: top;
+        }
+        
+        .osnovnoj_text>p {
+            font-size: 2rem;
+            color: green;
+            position: absolute;
+            left: 40%;
+            z-index: 2;
+            text-align: center;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        .photo2 {
+            padding: 10px;
+            height: 110vh;
+            background-color: #000;
+            font-size: 2rem;
+            color: green;
+            -webkit-clip-path: polygon(0 10%, 120% 0%, 100% 95%, 0 100%);
+            clip-path: polygon(0 5%, 120% 0%, 100% 95%, 0 100%);
+            text-align: center;
+        }
+        
+        .photo2>img {
+            width: 30%;
+            height: 45%;
+            transition: 5s;
+        }
+        
+        .photo2>img:hover {
+            position: relative;
+            width: 35%;
+            height: 50%;
+        }
+        
+        .contacts {
+            font-size: 2rem;
+            color: green;
+            height: 25vh;
+            padding: 100px;
+        }
+        
+        footer {
+            position: absolute;
+            width: 100%;
+            height: 5%;
+            background-color: hsla(0, 0%, 0%, 0.63);
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="menu">
+        <p>
+            G4PLAY
+
+        </p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li><a href="http://git.g4play.ru">Основной сайт</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="photo1">
+
+            <div class="photo">
+                <p>Be Yourself</p>
+            </div>
+        </section>
+        <section class="osnovnoj_text">
+            <p>Цитаты великих людей</p>
+            <article>
+                <p>Личности всегда приходится бороться, чтобы не быть раздавленным массой. Если вы попробуете это, вы часто будете одиноки, и иногда вам будет страшно. Но никакая цена не слишком высока за привилегию обладать собой.</p> <cite>Фридрих Ницше</cite></article>
+            <article>
+                <p>Оставаться собой в мире, который постоянно пытается сделать вас чем-нибудь другим — величайшее достижение.</p><cite>Ральф Уолдо Эмерсон</cite></article>
+            <article>
+                <p>Продолжай идти вперёд, делай своё дело, будь верен своим мечтам. И тогда все они сбудутся.</p><cite>Автор не указан</cite></article>
+        </section>
+        <section class="photo2">
+            <p align="center">Интересные фото, которые поднимут вам настроение</p>
+            <img src="https://ru.best-wallpaper.net/wallpaper/1920x1080/1406/Morning-mountains-fog-forest-nature-landscape_1920x1080.jpg" alt="morning">
+            <img src="https://look.com.ua/pic/201503/1920x1200/look.com.ua-117952.jpg" alt="drevo">
+            <img src="https://wallperz.com/wp-content/uploads/2017/03/20/wallperz.com-20170320021514.jpg" alt="krasota">
+            <img src="http://xrust.ru/uploads/posts/2016-07/1469682723_yosemite-3.jpg" alt="">
+            <img src="http://d3.files.namba.net/files/84813221" alt="">
+            <img src="http://x-wallpapers.ru/fon/24/tumannyy_les_2560x1600.jpg" alt="">
+        </section>
+        <section class="contacts">
+            <p><b>Дмитрий Потёмин</b></p>
+            <p>Телефон: +79687928588</p>
+            <p>E@mail: potymin.dima@mail.ru</p>
+        </section>
+    </main>
+    <footer>
+        <p>Corryght by Dmitry Potymin. 2017</p>
+    </footer>
+</body>
+
+</html>
