@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+        @import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+        html,
+        body,
+        section {
+            font-family: 'Roboto';
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+        
+        p {
+            margin-left: 1%;
+        }
+        
+        h1 {
+            font-size: 1.5rem;
+            font-family: "Bree Serif";
+        }
+        
+        header {
+            background-color: rgba(227, 57, 57, 0.94);
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            height: 10%;
+        }
+        
+        video {
+            position: static;
+            width: 100%;
+        }
+        
+        .header1>video {
+            width: 100%;
+        }
+        
+        header>h1 {
+            font-family: 'Bree Serif';
+            font-size: 2.25em;
+            color: rgba(0, 0, 0, 0.74);
+            display: inline-block;
+            margin-left: 5%;
+        }
+        
+        .standart {
+            left: -20%;
+        }
+        
+        #button1 {
+            background-color: rgba(227, 57, 57, 0.94);
+            border: 0;
+            position: relative;
+            top: 0px;
+            display: inline-block;
+        }
+        
+        #nav1 {
+            position: absolute;
+            width: 20%;
+            height: 100vh;
+            background-color: rgba(227, 57, 57, 0.94);
+            transition: 2.5s;
+        }
+        
+        .open {
+            left: 0;
+        }
+        
+        article {
+            display: block;
+            background-color: orange;
+            border: 3px solid hsl(28, 100%, 50%);
+            border-radius: 40px;
+            margin: 20px;
+            font-size: 1.5em;
+            padding: 25px;
+            height: 100%;
+            vertical-align: top;
+            text-align: center;
+        }
+        
+        a {
+            font-size: 1.2em;
+            text-decoration: none;
+            color: black;
+        }
+        
+        img {
+            width: 90%;
+            display: inline-block;
+            vertical-align: top;
+            transition: 2.5s;
+            border-radius: 10px;
+        }
+        
+        li {
+            margin: 10px;
+        }
+        
+        img:hover {
+            width: 100%;
+        }
+        
+        #a4>img {
+            width: 40%;
+        }
+        
+        div {
+            border-radius: 5px;
+            border: 3px solid gray;
+            color: black;
+            width: 5%;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: .5s;
+        }
+        
+        div:hover {
+            border: 3px solid rgb(175, 175, 1);
+        }
+        
+        @media(min-width:1024px) {
+            article {
+                width: 25%;
+                display: inline-block;
+                height: 300px;
+            }
+            #button1 {
+                display: none;
+            }
+            li {
+                display: inline-block;
+                margin: 20px;
+            }
+            nav {
+                position: fixed;
+                left: 0px;
+                width: auto;
+                height: 100%;
+                display: inline-block;
+            }
+            #nav1 {
+                height: 10%;
+                position: fixed;
+                background-color: none;
+                left: 400px;
+                width: 50%;
+            }
+            a {
+                color: black;
+                font-size: 1.2rem;
+                text-decoration: none;
+            }
+            .standart {
+                left: 0px;
+                position: static;
+                width: auto;
+                height: 100%;
+            }
+            article> img{
+                width: 60%;
+            }
+            article>img:hover{
+                width:65%;
+            }
+            img {
+                width: 30%;
+            }
+            img:hover {
+                width: 33%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <button id="button1"><svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></button>
+        <h1>
+            Livre
+        </h1>
+
+        <nav id="nav1" class="standart">
+            <ul>
+                <li><a href="#a1">Главная</a></li>
+                <li><a href="#a2">О нас</a></li>
+                <li><a href="#a3"> Галерея </a></li>
+                <li><a href="#a4">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <video src="book.mp4" autoplay="true" loop id="a1"></video>
+    <main>
+        <section id="a2">
+            <h2>Почему мы?</h2>
+            <article>
+                <img src="http://ponedelnikmag.com/users/4871/young_boss/02_young_boss.jpg" alt="nachalnik">
+                <h3>На рынке с <span style="color:yellow">2008</span> года</h3>
+            </article>
+            <article>
+                <img src="http://stat8.blog.ru/lr/0a2d7ddb9afe080728be0950b69abc5f" alt="mnogoknig">
+                <h3>Уже продали свыше <span style="color:red">10 000 000</span> книг</h3>
+            </article>
+            <article>
+                <img src="http://sitno.ru/upload/medialibrary/914/914c8ee2b27c20d82adcf4ae98d34ac4.jpg" alt="dogovor">
+                <h3>Мы являемся партнерами более <span style="color: green">20</span> компаний</h3>
+            </article>
+        </section>
+        <section id="a3">
+            <h2>Галерея</h2>
+            <img src="library-488678_1920.jpg" alt="книга1">
+            <img src="book-1659717_1920.jpg" alt="еще_книга">
+            <img src="books-441866_1920.jpg" alt="любимые книги">
+            <img src="old-books-436498_1920.jpg" alt="рукакнига">
+            <img src="books-2241631_1920.jpg" alt="кучка книг">
+            <img src="hymnal-2204768_1920.jpg" alt="еще книга">
+        </section>
+        <section id="a4">
+            <h2>Схема проезда</h2>
+            <img src="%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA.PNG" alt="Photo">
+
+            <h2>Бук-Сток</h2>
+            <div> <a href="http://www.book-stock.ru/">Сайт</a></div>
+        </section>
+
+    </main>
+    <footer>
+        <p>Corryght by Dmitry Potymin. 2017</p>
+    </footer>
+    <script>
+        button1.addEventListener('click', function() {
+            nav1.classList.toggle('open');
+
+        })
+    </script>
+</body>
+
+</html>
